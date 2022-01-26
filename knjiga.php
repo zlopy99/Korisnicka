@@ -38,6 +38,7 @@
 
         
 <div class="container border mt-5 bg-white">  
+<h1 class="kdata"><?php echo $dijelovi[1] ."<br>"; ?></h1>
   <div class="row bg-light p-2">
     <div class="col-4">
       <img src="<?php echo $dijelovi[6]; ?>" alt="Error" class="img-fluid mx-auto d-block">

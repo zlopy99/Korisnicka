@@ -1,7 +1,11 @@
+<?php
+
+      
+?>
 <!DOCTYPE html>
 <html> 
     <head>
-        <title> Knjige</title>
+        <title> Recenzije knjiga</title>
         <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
         <link rel="stylesheet" href="css/styles.css" type="text/css">
     </head>
@@ -16,7 +20,7 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item active">
-            <a class="nav-link" aria-current="page" href="index.php">Home</a>
+            <a class="nav-link" aria-current="page" href="index.php">Početna</a>
           </li>
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item active">
@@ -31,6 +35,9 @@
       <ul class="nav-item1">
           <a class="nav-link btn btn-primary" href="templates/inc/login.php" tabindex="-1" aria-disabled="true"> Prijava  </a>
        </ul>
+       <?php
+       
+       ?>
     </div>
   </nav>
 </header>

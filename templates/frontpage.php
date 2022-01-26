@@ -8,7 +8,9 @@
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-light text-light">Postani član</h1>
-        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        <p class="lead text-muted">Ako voliš čitati i ako voliš knjige,
+              pozivamo te da se učlaniš u klub Recenzije knjiga. Online stranica Recenzije knjiga pravo je mjesto za tebe i sve knjigoljupce jer ovdje možeš naći široki izbor novih knjiga koje
+              su stalno ažurirane kao i brojne druge pogodnosti.</p>
         <p>
           <a href="templates/inc/login.php" class="btn btn-primary my-2">Prijavi se</a>
           <a href="#kontakt" class="btn btn-secondary my-2">Kontaktiraj nas</a>
@@ -26,11 +28,11 @@
             <img class="bd-placeholder-img card-img-top" src="mali_princ_novo.jpg" width="100%" min-height="225px"  role="img"><title>Placeholder</title>
 
             <div class="card-body bg-white">
-              <p class="card-text"><b>Mali Princ</b> </br> <hr> This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><b>Mali Princ</b> </br> <hr> Pripovjedačevo upoznavanje Malog princa dok popravlja svoj avion, potraga princa za shvaćanjem što mu cvijet znači perspektiva i vjerodostojnost odraslih.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary" onclick="document.location='knjiga.php?id=0'">Detalji</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Komentari</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="document.location='knjiga.php?id=0#recenzija'">Komentari</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Ocjena</button>
                 </div>
                 <small class="text-muted">9 mins</small>
@@ -44,11 +46,11 @@
             <img class="bd-placeholder-img card-img-top" src="druzba_pere_kvrdzice_lovrak.jpg" width="100%" min-height="225px" role="img"><title>Placeholder</title>
 
             <div class="card-body bg-white">
-              <p class="card-text"><b>Družba Pere Kvržice</b> <br/> <hr>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><b>Družba Pere Kvržice</b> <br/> <hr>Djeca su odlučila obnoviti stari mlin kako bi ga predali nesložnim seljanima na uporabu.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary" onclick="document.location='knjiga.php?id=1'">Detalji</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Komentari</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="document.location='knjiga.php?id=1#recenzija'">Komentari</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Ocjena</button>
                 </div>
                 <small class="text-muted">9 mins</small>
@@ -62,11 +64,11 @@
            <img class="bd-placeholder-img card-img-top" src="zlocin_i_kazna_feniks.jpg" width="100%" min-height="225px" role="img"><title>Placeholder</title>
 
             <div class="card-body bg-white">
-              <p class="card-text"><b>Zločin I Kazna</b><br><hr>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><b>Zločin I Kazna</b><br><hr>Raskoljnikova muči ideja o izvršenju više pravde koju će ostvariti ubojstvom Aljone Ivanove, gramzive lihvarice čijim bi novcima usrećio siromašne, a kad ju ubije muči ga grižnja savjesti zbog toga što je učinio.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary" onclick="document.location='knjiga.php?id=2'">Detalji</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Komentari</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="document.location='knjiga.php?id=2#recenzija'">Komentari</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Ocjena</button>
                 </div>
                 <small class="text-muted">9 mins</small>
@@ -80,11 +82,11 @@
             <img class="bd-placeholder-img card-img-top" src="MobyDick.jpg" width="100%" min-height="225px" role="img"><title>Placeholder</title>
 
             <div class="card-body bg-white">
-              <p class="card-text"><b>Moby Dick</b><br><hr>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><b>Moby Dick</b><br><hr>Neizmjerni i bojazni, a isto tako i očekivani kitovi predstavljaju za Ahaba, Ishmaela i cijelu posadu pravi kontrast dobra i zla.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary" onclick="document.location='knjiga.php?id=3'">Detalji</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Komentari</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="document.location='knjiga.php?id=3#recenzija'">Komentari</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Ocjena</button>
                 </div>
                 <small class="text-muted">9 mins</small>
@@ -97,11 +99,11 @@
           <img class="bd-placeholder-img card-img-top" src="Tom_Sojer.jpg" width="100%" min-height="225px" role="img"><title>Placeholder</title>
 
             <div class="card-body bg-white">
-              <p class="card-text"><b>Tom Sojer</b><br><hr>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><b>Tom Sojer</b><br><hr>Pustolovine dječaka Toma i njegovih prijatelja.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary" onclick="document.location='knjiga.php?id=4'">Detalji</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Komentari</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="document.location='knjiga.php?id=4#recenzija'">Komentari</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Ocjena</button>
                 </div>
                 <small class="text-muted"id="about">9 mins</small>
@@ -115,11 +117,11 @@
             <img class="bd-placeholder-img card-img-top" src="Gonic_Zmajeva.jpg" width="100%" min-height="225px"  role="img"><title>Placeholder</title>
 
             <div class="card-body bg-white">
-              <p class="card-text"><b>Gonič Zmajeva</b> </br> <hr> This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><b>Gonič Zmajeva</b> </br> <hr>Gonič zmajeva prvi je roman afganistanskog pisca Khaleda Hosseinija, koji je odmah postao uspješnicom, provevši čak 101 tjedan na listi najčitanijih naslova The New York Timesa.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary" onclick="document.location='knjiga.php?id=5'">Detalji</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Komentari</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="document.location='knjiga.php?id=5#recenzija'">Komentari</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Ocjena</button>
                 </div>
                 <small class="text-muted">9 mins</small>
@@ -134,7 +136,7 @@
 		<h3 class="w3l-title">O Nama</h3>
     <hr>
 		<div class="w3layouts_header">
-      <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p> Mi smo studenti 4. i 5. godine računarstva fakulteta strojarstva, računarstva i elektrotehnike u Mostaru. Znamo se već dugi niz godina i dobri smo prijatelji. Svi jako volimo programirati i dizajnirati stvari pa smo se tako odlučili zajedno raditi na ovom projektu. Ovim projektom želimo proširiti svoje znanje o dizajnu korisničkog sučelja i timskom radu.</p>
 		</div>
     <!--
 		<div class="col-md-7 wthree-services-bottom-grids">
