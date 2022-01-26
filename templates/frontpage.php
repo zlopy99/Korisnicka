@@ -25,7 +25,7 @@
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" src="mali_princ_novo.jpg" width="100%" min-height="225px"  role="img"><title>Placeholder</title>
 
-            <div class="card-body">
+            <div class="card-body bg-white">
               <p class="card-text"><b>Mali Princ</b> </br> <hr> This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
@@ -43,7 +43,7 @@
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" src="druzba_pere_kvrdzice_lovrak.jpg" width="100%" min-height="225px" role="img"><title>Placeholder</title>
 
-            <div class="card-body">
+            <div class="card-body bg-white">
               <p class="card-text"><b>Družba Pere Kvržice</b> <br/> <hr>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
@@ -61,7 +61,7 @@
           <div class="card shadow-sm">
            <img class="bd-placeholder-img card-img-top" src="zlocin_i_kazna_feniks.jpg" width="100%" min-height="225px" role="img"><title>Placeholder</title>
 
-            <div class="card-body">
+            <div class="card-body bg-white">
               <p class="card-text"><b>Zločin I Kazna</b><br><hr>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
@@ -79,7 +79,7 @@
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" src="MobyDick.jpg" width="100%" min-height="225px" role="img"><title>Placeholder</title>
 
-            <div class="card-body">
+            <div class="card-body bg-white">
               <p class="card-text"><b>Moby Dick</b><br><hr>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
@@ -96,7 +96,7 @@
           <div class="card shadow-sm">
           <img class="bd-placeholder-img card-img-top" src="Tom_Sojer.jpg" width="100%" min-height="225px" role="img"><title>Placeholder</title>
 
-            <div class="card-body">
+            <div class="card-body bg-white">
               <p class="card-text"><b>Tom Sojer</b><br><hr>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
@@ -114,7 +114,7 @@
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" src="Gonic_Zmajeva.jpg" width="100%" min-height="225px"  role="img"><title>Placeholder</title>
 
-            <div class="card-body">
+            <div class="card-body bg-white">
               <p class="card-text"><b>Gonič Zmajeva</b> </br> <hr> This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">

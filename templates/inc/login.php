@@ -1,14 +1,18 @@
 <?php session_start(); /* Starts the session */
 /* Check Login form submitted */if(isset($_POST['Submit'])){
-/* Define username and associated password array */$logins = array('Marko12@gmail.com' => '123456','matemaric@gmail.com' => '123456','username2' => 'password2');
+/* Define username and associated password array */
+$logins = array('Andro@gmail.com' => '123456', 'Ljubo@gmail.com' => '123456', 
+'Jure@gmail.com' => '123456', 'Vinko@gmail.com' => '123456');
 $admins = array('admin1' => '123456','admin2' => '123456','admin3' => 'lozinka');
 $prof = array('martin12@gmail.com' => '123456','markomaric@gmail.com' => '123456','admin3' => 'lozinka');
 
 /* Check and assign submitted Username and Password to new variable */$Username = isset($_POST['Username']) ? $_POST['Username'] : '';
 $Password = isset($_POST['Password']) ? $_POST['Password'] : '';
 
-/* Check Username and Password existence in defined array */if (isset($logins[$Username]) && $logins[$Username] == $Password){
-/* Success: Set session variables and redirect to Protected page  */$_SESSION['UserData']['Username']=$logins[$Username];
+/* Check Username and Password existence in defined array */
+if (isset($logins[$Username]) && $logins[$Username] == $Password){
+/* Success: Set session variables and redirect to Protected page  */
+$_SESSION['UserData']['Username']=$logins[$Username];
 header("location:user.php");
 exit;
 } 
