@@ -29,7 +29,7 @@
               <p class="card-text"><b>Mali Princ</b> </br> <hr> This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Detalji</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="document.location='knjiga.php?id=0'">Detalji</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Komentari</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Ocjena</button>
                 </div>
@@ -47,7 +47,7 @@
               <p class="card-text"><b>Družba Pere Kvržice</b> <br/> <hr>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Detalji</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="document.location='knjiga.php?id=1'">Detalji</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Komentari</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Ocjena</button>
                 </div>
@@ -65,7 +65,7 @@
               <p class="card-text"><b>Zločin I Kazna</b><br><hr>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Detalji</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="document.location='knjiga.php?id=2'">Detalji</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Komentari</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Ocjena</button>
                 </div>
@@ -77,13 +77,13 @@
 
           <div class="col">
           <div class="card shadow-sm">
-            <img class="bd-placeholder-img card-img-top" src="Moby_Dick.jpg" width="100%" min-height="225px" role="img"><title>Placeholder</title>
+            <img class="bd-placeholder-img card-img-top" src="MobyDick.jpg" width="100%" min-height="225px" role="img"><title>Placeholder</title>
 
             <div class="card-body">
               <p class="card-text"><b>Moby Dick</b><br><hr>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Detalji</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="document.location='knjiga.php?id=3'">Detalji</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Komentari</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Ocjena</button>
                 </div>
@@ -100,7 +100,7 @@
               <p class="card-text"><b>Tom Sojer</b><br><hr>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Detalji</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="document.location='knjiga.php?id=4'">Detalji</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Komentari</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Ocjena</button>
                 </div>
@@ -118,7 +118,7 @@
               <p class="card-text"><b>Gonič Zmajeva</b> </br> <hr> This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Detalji</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="document.location='knjiga.php?id=5'">Detalji</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Komentari</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Ocjena</button>
                 </div>
