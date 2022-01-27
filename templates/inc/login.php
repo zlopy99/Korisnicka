@@ -1,32 +1,22 @@
 <?php session_start(); /* Starts the session */
 /* Check Login form submitted */if(isset($_POST['Submit'])){
 /* Define username and associated password array */
-$logins = array('Andro@gmail.com' => '123456', 'Ljubo@gmail.com' => '123456', 
+
+$admins = array('Andro@gmail.com' => '123456', 'Ljubo@gmail.com' => '123456', 
 'Jure@gmail.com' => '123456', 'Vinko@gmail.com' => '123456');
-$admins = array('admin1' => '123456','admin2' => '123456','admin3' => 'lozinka');
-$prof = array('martin12@gmail.com' => '123456','markomaric@gmail.com' => '123456','admin3' => 'lozinka');
 
 /* Check and assign submitted Username and Password to new variable */$Username = isset($_POST['Username']) ? $_POST['Username'] : '';
 $Password = isset($_POST['Password']) ? $_POST['Password'] : '';
 
 /* Check Username and Password existence in defined array */
-if (isset($logins[$Username]) && $logins[$Username] == $Password){
-/* Success: Set session variables and redirect to Protected page  */
-$_SESSION['UserData']['Username']=$logins[$Username];
-header("location:../../index.php");
-exit;
-} 
-else if (isset($admins[$Username]) && $admins[$Username] == $Password){
-   $_SESSION['UserData']['Username']=$admins[$Username]; 
-   header("location:admin.php");
-}
-else if (isset($prof[$Username]) && $prof[$Username] == $Password){
-   $_SESSION['UserData']['Username']=$prof[$Username]; 
-   header("location:prof.php");
-}
-else {
-/*Unsuccessful attempt: Set error message */$msg="<span style='color:red'>Unijeli ste neispravne podatke</span>";
-}
+  if (isset($admins[$Username]) && $admins[$Username] == $Password){
+    $_SESSION['UserData']['Username']=$admins[$Username]; 
+    header("location:knjige.php");
+  exit;
+  } 
+  else {
+  /*Unsuccessful attempt: Set error message */$msg="<span style='color:red'>Unijeli ste neispravne podatke</span>";
+  }
 }
 ?>
 <!DOCTYPE html>
@@ -37,17 +27,18 @@ else {
         <link rel="stylesheet" href="../../css/bootstrap.css" type="text/css">
         <link rel="stylesheet" href="../../css/styles.css" type="text/css">
     </head>
-<body>
+<body style="background-image: url(HD-Library-Wallpaper.jpg); height: 400px; 
+      background-repeat: no-repeat; background-size: cover; ">
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="../../index.php">Škola </a>
+      <a class="navbar-brand" href="../../index.php">Početna </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
 </nav>
 <form action="" method="post" name="Login_Form">
-  <table width="400" border="0" align="center" cellpadding="5" cellspacing="1" class="Table">
+  <table width="400" border="0" align="center" cellpadding="5" cellspacing="1" class="Table bg-dark">
       <div class="tbody">
       <?php if(isset($msg)){?>
     <tr>

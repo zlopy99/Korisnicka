@@ -11,7 +11,7 @@
               <label for="fname">Ime</label>
             </div>
             <div class="col-75">
-              <input type="text"  placeholder="Your name..">
+              <input type="text"  placeholder="Your name.." required>
             </div>
           </div>
           <div class="row">
@@ -19,7 +19,7 @@
               <label for="lname">Prezime</label>
             </div>
             <div class="col-75">
-              <input type="text"placeholder="Your last name..">
+              <input type="text"placeholder="Your last name.." required>
             </div>
           </div>
           <div class="row">
@@ -27,7 +27,7 @@
               <label for="country">Država</label>
             </div>
             <div class="col-75">
-              <select>
+              <select required>
                 <!--
                 <option value="australia">Australia</option>
                 <option value="canada">Canada</option>
@@ -44,10 +44,10 @@
               <label for="subject">Poruka</label>
             </div>
             <div class="col-75">
-              <textarea placeholder="Write something.." style="height:200px"></textarea>
+              <textarea placeholder="Write something.." style="height:200px" required></textarea>
             </div>
           </div>
           <div class="row">
-              <input type="submit" formaction="/online_tecajevi/templates/inc/scc.php" class="btn btn-success"  value="Submit">
+              <input type="submit" formaction="/Korisnicka/templates/inc/scc.php" class="btn btn-success"  value="Submit">
           </div>
           </form>

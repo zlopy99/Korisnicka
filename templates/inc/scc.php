@@ -96,19 +96,19 @@ body {
 <head>
 </head>
 <body>
-	<div class="modal-dialog modal-confirm">
+<div class="modal-dialog modal-confirm">
 		<div class="modal-content">
 			<div class="modal-header">
 				<div class="icon-box">
 					<i class="material-icons">&#xE876;</i>
 				</div>				
-				<h4 class="modal-title w-100">Awesome!</h4>	
+				<h4 class="modal-title w-100">Hvala vam</h4>	
 			</div>
 			<div class="modal-body">
-				<p class="text-center">Your booking has been confirmed. Check your email for detials.</p>
+				<p class="text-center">Vaša poruka je uzeta na razmatranje. Provjerite email za detalje.</p>
 			</div>
 			<div class="modal-footer">
-                            <button class="btn btn-success btn-block"  data-dismiss="modal"><a href=../../index.php>OK</a></button>
+			<button class="btn btn-success btn-block"  data-dismiss="modal" onclick="document.location='../../index.php'">OK</button>
 			</div>
 		</div>
 	</div>
