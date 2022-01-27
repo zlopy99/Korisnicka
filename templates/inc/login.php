@@ -23,12 +23,21 @@ $Password = isset($_POST['Password']) ? $_POST['Password'] : '';
 <html>
     <head> 
         <title> Prijava</title>
+        <script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
         <link  href="../../css/lg.css" rel="stylesheet" type="text/css" >
         <link rel="stylesheet" href="../../css/bootstrap.css" type="text/css">
         <link rel="stylesheet" href="../../css/styles.css" type="text/css">
+        <link rel="stylesheet" href="../../css/animation.css" type="text/css">
+        
     </head>
 <body style="background-image: url(HD-Library-Wallpaper.jpg); height: 400px; 
       background-repeat: no-repeat; background-size: cover; ">
+
+      <!-- Page transision -->
+      <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+      </div>
+
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="../../index.php">Početna </a>
@@ -62,6 +71,12 @@ $Password = isset($_POST['Password']) ? $_POST['Password'] : '';
     </tr>
   </table>
 </form>
+
+<script type="text/javascript">
+   $(window).on("load", function () {
+      $(".loader-wrapper, .loader").fadeOut(2000);                 
+    });
+</script>
 </body>
 </html>
 

@@ -10,6 +10,7 @@ currentMonth = today.getMonth();
 showCalendar(currentMonth, currentYear);
 
 
+
 function next() {
     currentYear = (currentMonth === 11) ? currentYear + 1 : currentYear;
     currentMonth = (currentMonth + 1) % 12;
@@ -158,3 +159,8 @@ function myFunction() {
       x.style.display = "block";
     }
   }
+
+  $(window).on("load", function () {
+    $(".loader-wrapper, .loader").fadeOut(2000);
+    
+});

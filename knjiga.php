@@ -16,16 +16,22 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/not.css" type="text/css">
+    <link rel="stylesheet" href="css/animation.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Recenzija knjiga</title>
   </head>
+  
 <body class="bg-dark">
+        <!-- Page transision -->
+        <div class="loader-wrapper">
+              <span class="loader"><span class="loader-inner"></span></span>
+            </div>
     <!--
     <div>
       
@@ -37,7 +43,7 @@
 -->
 
         
-<div class="container border mt-5 bg-white">  
+<div class="container border mt-5 bg-white" style="padding-top: 30px;">  
   <h1 class="kdata"><?php echo $dijelovi[1] ."<br>"; ?></h1>
   <div class="row bg-light p-2">
     <div class="col-4">
@@ -48,8 +54,7 @@
       <h1 class="kdata">Autor: <?php echo $dijelovi[2] ."<br>"; ?></h1>
       <h1 class="kdata">Godina izdanja: <?php echo $dijelovi[3] ."<br>"; ?></h1>
       <h1 class="kdata">Tip knjige: <?php echo $dijelovi[4]; ?></h1>
-      <h1 class="kdata">Ocjena:</h1>
-      <h1 class="ocijeni">Ocijeni:</h1>
+      <h1 class="kdata">Ocjena: <?php echo $dijelovi[7];?>/5 &#9733</h1>
       <div class="rate"> 
         <input type="radio" id="star5" name="rate" value="5" />
         <label for="star5" title="text">5 stars</label>
@@ -126,7 +131,54 @@
         <span class="badge-primary badge-pill">Ana Anić</span>
       </ul>
         ';
-        }?>
+        }
+        elseif($id == 2){
+          echo '
+        <ul class="list-group centertxt" id="Komentari">
+        <li class="list-group-item d-flex justify-content-between align-items-center mt-3">
+        Smatram kako se ovako opsežno djelo ne moze razmatrati sa stajališta „sviđa mi se i ne sviđa mi se.
+        “ Naravno,knjiga je predugačka i napisana na previše stranica da bi ju čitali učenici kojima lektira nije na vrhu prioriteta. I upravo zato većinu negativnih komentara o veličanstvenom djelu Dostojevskog dobivamo od srednjoškolaca.
+        </li>
+        <span class="badge-primary badge-pill">Marko Markic</span>
+
+        <li class="list-group-item d-flex justify-content-between align-items-center mt-3">
+        Mislim da je sam Dostojevski bio puno ispred svojih suvremenika; nešto poput Beethoveena no u književnosti.
+        Jako mi se svidjela sama filozofija kojom je opisivao „obične i neobične“ ljude, te opsežan razgovor s Porfirijem i psihološki pregled općih zločina, njegov članak u novinama, unutarnje misli i halucinacije.
+        </li>
+        <span class="badge-primary badge-pill">Ivica Pehar</span>
+
+        <li class="list-group-item d-flex justify-content-between align-items-center mt-3">
+        Moja je zamjerka predetaljno opisivanje prostora te nekih manje bitnih događaja a skromnost u riječima na kraju djela,točnije epilogu. 
+        Jel opis sobe sa krevetom u kutu važniji od ljubavnog dijaloga između Raskoljnikovog i Sonjom koja je bila njegova jedina poveznica s realnim svijetom ?
+        </li>
+        <span class="badge-primary badge-pill">Davorka Ivankovic</span>
+      </ul>
+        ';
+        }
+        elseif($id == 1){
+          echo '
+        <ul class="list-group centertxt" id="Komentari">
+        <li class="list-group-item d-flex justify-content-between align-items-center mt-3">
+        Mato Lovrak is an amazing writer. He is among my favourite writers of children literature, second perhaps only to legendary Ivana Brlic Mazuranic. 
+        This book is a true classic of Croatian literature.
+        </li>
+        <span class="badge-primary badge-pill">Ivana Johnson</span>
+
+        <li class="list-group-item d-flex justify-content-between align-items-center mt-3">
+        Jako lijepa priča za djecu...kao dijete uživala sam u njoj, zabavna je i vesela. 
+        Pero smišlja nešto: obnoviti stari mlin koji su seljani napustili i u tu svrhu okuplja svoju družinu.
+        </li>
+        <span class="badge-primary badge-pill">Matija Milic</span>
+
+        <li class="list-group-item d-flex justify-content-between align-items-center mt-3">
+        Družba Pere kvržice je najbolja i najljepša knjiga.
+        </li>
+        <span class="badge-primary badge-pill">Andrija Tudor</span>
+      </ul>
+        ';
+        }
+        
+        ?>
         <ul class="list-group centertxt" id="Komentari">
           <!--
           <li class="list-group-item d-flex justify-content-between align-items-center mt-3"></li>
@@ -171,6 +223,11 @@
       document.getElementById('Recenzija').value = "";
       }
   }
+
+  $(window).on("load", function () {
+    $(".loader-wrapper, .loader").fadeOut(2000);
+    
+});
 </script>
 </body>
 </html>

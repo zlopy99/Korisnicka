@@ -1,9 +1,16 @@
 <?php include 'inc/header.php';?>
 <head>  
+    <script src="js/scripts.js"></script>
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/animation.css" type="text/css">
 </head>
 <main>
+  <!-- Page transision -->
+  <div class="loader-wrapper">
+              <span class="loader"><span class="loader-inner"></span></span>
+            </div>
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
@@ -132,7 +139,12 @@
       </div>
 </div>
 </main>
-
+<script>
+  $(window).on("load", function () {
+    $(".loader-wrapper, .loader").fadeOut(2000);
+    
+});
+</script>
 
 <?php include 'inc/footer.php';
 
